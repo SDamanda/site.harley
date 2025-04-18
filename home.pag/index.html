@@ -11,36 +11,40 @@
             margin: 0;
         }
 
-        .cabeçalho {
-            background-color: rgb(29, 28, 28);
+        .cabecalho2 {
+            background-color: white;
             width: 100%;
             padding: 65px 0;
             box-sizing: border-box;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-        .cabeçalho2{
-            background-color: white;
-            width: 100%;
-            padding: 50px 0;
-            box-sizing: border-box;
-            position: fixed;
+            position: absolute;
             top: 90px;
             left: 0;
             z-index: 1000;
         }
-      
-        
+
+
+
+        .cabecalho {
+            background-color: rgb(29, 28, 28);
+            width: 100%;
+            padding: 70px 0;
+            box-sizing: border-box;
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+
         .banner {
             width: 100%;
-            height: 170vh;
+            height: 140vh;
             background-image: url(/home.pag/imgs/banner2.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             position: relative;
+
         }
 
         .banner-overlay {
@@ -105,21 +109,39 @@
             position: relative;
             top: 200px;
         }
-        .logo{
-            width: 500px;
+
+        .logo {
+            width: 200px;
             z-index: 1000px;
+            position: relative;
+            top: 20px;
+            padding: 65px 0;
+            box-sizing: border-box;
+            position: absolute;
+            top: -50px;
+            left: 106vh;
+            z-index: 1000;
+        }
+        .log{
+            width: 100%;
+            position: relative;
+            top: 26px;
+            padding: 2px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="cabeçalho"></div>
-        <div class="cabeçalho2"></div>
+        <div class="cabecalho"></div>
+        <div class="cabecalho2"></div>
+        <img class="logo" src="/home.pag/imgs/logof.png" alt="logo">
         <button class="search">search</button>
         <button class="login">log in</button>
-        <button class="singup">sing up</button> 
+        <button class="singup">sing up</button>
     </header>
+        <img class="log" src="/home.pag/imgs/logof.png" alt="HarleyCross">
+    
     <div class="banner">
         <div class="banner-overlay">
             <div class="banner-texto">
@@ -153,7 +175,7 @@
         </div>
     </div>
     </div>
-    <img class="logo" src="/home.pag/imgs/logof.png" alt="logo">
+
 </body>
 
 </html>
