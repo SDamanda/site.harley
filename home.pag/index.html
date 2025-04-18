@@ -20,10 +20,18 @@
             top: 0;
             left: 0;
             z-index: 1000;
-
-
         }
-
+        .cabeçalho2{
+            background-color: wheat;
+            width: 100%;
+            padding: 50px 0;
+            box-sizing: border-box;
+            position: fixed;
+            top: 90px;
+            left: 0;
+            z-index: 1000;
+        }
+        
         .banner {
             width: 100%;
             height: 170vh;
@@ -91,8 +99,12 @@
             background: #fff;
             color: #000;
         }
-        .produto1{
-            
+
+        .produto1 {
+            position: relative;
+            top: 200px;
+        }
+        .logo{
             
         }
     </style>
@@ -101,6 +113,10 @@
 <body>
     <header>
         <div class="cabeçalho"></div>
+        <div class="cabeçalho2"></div>
+        <button class="search">search</button>
+        <button class="login">log in</button>
+        <button class="singup">sing up</button> 
     </header>
     <div class="banner">
         <div class="banner-overlay">
@@ -109,29 +125,33 @@
                 <h1>Liberdade <span class="destaque">Sobre Duas Rodas</span></h1>
                 <p>Descubra a potência e o estilo inconfundível das lendárias Harley-Davidson</p>
                 <button class="banner-btn">Explorar Modelos</button>
-            </div>
-            <div class="produto1">
-                <h1>modelo</h1>
-                <h3>especificacao</h3>
-                <p>cores</p>
-                <button class="info">Ver Mais</button>
-            </div>
 
-            <div class="produto1">
-                <h1>modelo</h1>
-                <h3>especificacao</h3>
-                <p>cores</p>
-                <button class="info">Ver Mais</button>
-            </div>
-            <div class="produto2">
-                <h1>modelo</h1>
-                <h3>especificacao</h3>
-                <p>cores</p>
-                <button class="info">Ver Mais</button>
+                <div class="produto1">
+                    <h1>modelo</h1>
+                    <h3>especificacao</h3>
+                    <p>cores</p>
+                    <button class="info">Ver Mais</button>
+
+
+                    <div class="produto1">
+                        <h1>modelo</h1>
+                        <h3>especificacao</h3>
+                        <p>cores</p>
+                        <button class="info">Ver Mais</button>
+
+                        <div class="produto2">
+                            <h1>modelo</h1>
+                            <h3>especificacao</h3>
+                            <p>cores</p>
+                            <button class="info">Ver Mais</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     </div>
+    <img class="logo" src="/home.pag/imgs/logof.png" alt="logo">
 </body>
 
 </html>
