@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HarleyCross</title>
     <style>
-        @media (max-width: 768px) {
-            body {
-                font-size: 16px;
-            }
-
-            .menu {
-                flex-direction: column;
-            }
+        body {
+            font-size: 16px;
         }
+
+        .menu {
+            flex-direction: column;
+        }
+
 
         body {
             background-color: rgb(0, 0, 0);
@@ -26,7 +25,8 @@
             flex-direction: column;
 
         }
-        .container{
+
+        .container {
             display: flex;
             flex-wrap: wrap;
             gap: 16px;
@@ -36,7 +36,7 @@
         .cabecalho2 {
             background-color: white;
             width: 100%;
-            padding: 65px 0;
+            padding: 3.5em;
             box-sizing: border-box;
             position: absolute;
             top: 90px;
@@ -47,7 +47,7 @@
         .cabecalho {
             background-color: rgb(29, 28, 28);
             width: 100%;
-            padding: 70px 0;
+            padding: 3.7em;
             box-sizing: border-box;
             position: relative;
             top: 0;
@@ -64,7 +64,7 @@
             background-repeat: no-repeat;
             background-position: center;
             position: relative;
-            margin-top: -60px;
+            margin-top: -1%;
             display: flex;
             max-width: 100%;
         }
@@ -145,23 +145,15 @@
 
         }
 
-        .log {
-            width: 100%;
-            position: relative;
-            top: 200px;
-            height: 20px;
-            padding: 2px;
-        }
-
-
         .modelos {
             position: relative;
-            top: 100px;
-            right: -300px;
+            top: 1em;
+            right: -16rem;
+            height: auto;
             display: inline;
             align-items: center;
             justify-content: center;
-            padding: 10px 80px;
+            padding: 1.5rem;
             margin: 200px;
             font-size: 4.0rem;
             text-shadow: 4px 4px 16px rgb(58, 56, 56);
@@ -179,6 +171,7 @@
         .modelos:hover {
             background-color: #ff6600;
             color: white;
+            border-radius: 0.4rem;
 
         }
 
@@ -239,44 +232,46 @@
             grid: 20px;
 
         }
+
+       
+        
     </style>
 </head>
 
 <body>
     <section class="container">
-    <header>
-        <div class="cabecalho"></div>
-        <div class="cabecalho2"></div>
-        <img class="logo" src="/home.pag/imgs/logof.png" alt="logo">
-        <input class="search" type="search" placeholder="  search...">
-        <button class="login">log in</button>
-        <button class="singup">sing up</button>
-        <img class="log" src="/home.pag/imgs/logof.png" alt="HarleyCross">
-    </header>
+        <header>
+            <div class="cabecalho"></div>
+            <div class="cabecalho2"></div>
+            <img class="logo" src="/home.pag/imgs/logof.png" alt="logo">
+            <input class="search" type="search" placeholder="  search...">
+            <a href="/login.pag/index.html"><button class="login">log in</button></a>
+            <a href="/singup.pag/index.html"><button class="singup">sing up</button></a>
+        </header>
 
-    <div class="banner">
-        <div class="banner-overlay">
-            <div class="banner-texto">
+        <div class="banner">
+            <div class="banner-overlay">
+                <div class="banner-texto">
 
-                <h1>Liberdade <span class="destaque">Sobre Duas Rodas</span></h1>
-                <p>Descubra a potência e o estilo inconfundível das lendárias Harley-Davidson</p>
-                <button class="banner-btn">Explorar Modelos</button>
+                    <h1>Liberdade <span class="destaque">Sobre Duas Rodas</span></h1>
+                    <p>Descubra a potência e o estilo inconfundível das lendárias Harley-Davidson</p>
+                    <a href="/catalogo/index.html"><button class="banner-btn">Explorar Modelos</button></a>
+                </div>
             </div>
         </div>
-    </div>
 
 
-    <div id="modelos">
-        <button class="modelos">cruiser</button>
-        <button class="modelos">modelo</button>
-        <button class="modelos">modelo</button>
-        <button class="modelos">modelo</button>
-        <button class="modelos">modelo</button>
-    </div>
+        <div id="modelos">
+            <button class="modelos">cruiser</button>
+            <button class="modelos">Fat Boy 114</button>
+            <button class="modelos">Road King</button>
+            <button class="modelos">LiveWire</button>
+            <button class="modelos"> Nightster</button>
+        </div>
 
-</section>
+    </section>
 
-    
+
 </body>
 
 </html>
