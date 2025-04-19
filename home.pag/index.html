@@ -44,7 +44,8 @@
             background-repeat: no-repeat;
             background-position: center;
             position: relative;
-
+            margin-top: 20px;
+            display: flex;
         }
 
         .banner-overlay {
@@ -65,7 +66,7 @@
             transform: translateY(-50%);
             color: #fff;
             z-index: 2;
-            max-width: 60vh;
+            max-width: 50vh;
         }
 
         .banner-texto h1 {
@@ -119,14 +120,50 @@
             box-sizing: border-box;
             position: absolute;
             top: -50px;
-            left: 106vh;
+            left: 98vh;
             z-index: 1000;
+
         }
-        .log{
+
+        .log {
             width: 100%;
             position: relative;
-            top: 26px;
+            top: 200px;
+            height: 20px;
             padding: 2px;
+        }
+
+
+        .modelos {
+            display: flex;
+            grid: 80%;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 1100px;
+            height: 150px;
+            margin-top: 80px;
+            right: -980px;
+            padding: 18x 50px;
+            border: #fff;
+            margin: 6vh;
+            width: 40%;
+            font-size: 4.8rem;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            background-color: rgb(92, 87, 87);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            box-sizing: border-box;
+
+
+        }
+        .modelos:hover{
+            background-color: #ff6600;
+            color: #000;
+            
         }
     </style>
 </head>
@@ -139,9 +176,9 @@
         <button class="search">search</button>
         <button class="login">log in</button>
         <button class="singup">sing up</button>
-    </header>
         <img class="log" src="/home.pag/imgs/logof.png" alt="HarleyCross">
-    
+    </header>
+
     <div class="banner">
         <div class="banner-overlay">
             <div class="banner-texto">
@@ -149,6 +186,17 @@
                 <h1>Liberdade <span class="destaque">Sobre Duas Rodas</span></h1>
                 <p>Descubra a potência e o estilo inconfundível das lendárias Harley-Davidson</p>
                 <button class="banner-btn">Explorar Modelos</button>
+               
+
+                <div id="modelos">
+                    <button class="modelos">cruiser</button>
+                    <button class="modelos">modelo</button>
+                    <button class="modelos">modelo</button>
+                    <button class="modelos">modelo</button>
+                    <button class="modelos">modelo</button>
+                </div>
+
+
 
                 <div class="produto1">
                     <h1>modelo</h1>
