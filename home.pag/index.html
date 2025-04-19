@@ -6,10 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HarleyCross</title>
     <style>
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            .menu {
+                flex-direction: column;
+            }
+        }
+
         body {
             background-color: rgb(0, 0, 0);
             margin: 0;
+            font-size: 18px;
         }
+
+        .menu {
+            flex-direction: column;
+
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
 
         .cabecalho2 {
             background-color: white;
@@ -21,8 +43,6 @@
             left: 0;
             z-index: 1000;
         }
-
-
 
         .cabecalho {
             background-color: rgb(29, 28, 28);
@@ -39,24 +59,26 @@
         .banner {
             width: 100%;
             height: 140vh;
-            background-image: url(/home.pag/imgs/banner2.jpg);
+            background-image: url(/home.pag/imgs/BANNER.jpeg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             position: relative;
             margin-top: -60px;
             display: flex;
+            max-width: 100%;
         }
 
         .banner-overlay {
             position: absolute;
             top: -1400px;
-            left: 0;
+            left: 0.2px;
             right: 15%;
             bottom: 0px;
             background: rgba(0, 0, 0, 0.4);
             z-index: 1;
             width: 100%;
+            letter-spacing: 2px;
         }
 
         .banner-texto {
@@ -71,7 +93,9 @@
         }
 
         .banner-texto h1 {
-            font-size: 9.0rem;
+            position: relative;
+            top: 12px;
+            font-size: 9.9rem;
             font-weight: 800;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -81,7 +105,7 @@
         }
 
         .banner-texto p {
-            font-size: 5.4rem;
+            font-size: 5.2rem;
             margin: 15px 0 25px;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
         }
@@ -105,11 +129,6 @@
         .banner-btn:hover {
             background: #fff;
             color: #000;
-        }
-
-        .produto1 {
-            position: relative;
-            top: 200px;
         }
 
         .logo {
@@ -166,7 +185,7 @@
         .login {
             position: relative;
             top: -30px;
-            left: 74.8%;
+            left: 151vh;
             color: #000;
             z-index: 2000;
             padding: 10px 20px;
@@ -174,13 +193,18 @@
             font-weight: bold;
             background: none;
             border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
+        .login:hover {
+            color: #ff6600;
         }
 
         .singup {
             position: relative;
             top: -35px;
-            left: 76%;
+            left: 153vh;
             color: #000;
             z-index: 2000;
             padding: 10px 20px;
@@ -191,6 +215,7 @@
             color: #fff;
             border-radius: 50px;
             border: none;
+            transition: all 0.3s ease;
         }
 
         .singup:hover {
@@ -206,21 +231,24 @@
             color: gray;
             position: relative;
             top: -38px;
-            left: 72.9%;
+            left: 148vh;
             z-index: 2000;
             font-size: 3rem;
             border-radius: 50px;
+            padding: 8px;
+            grid: 20px;
 
         }
     </style>
 </head>
 
 <body>
+    <section class="container">
     <header>
         <div class="cabecalho"></div>
         <div class="cabecalho2"></div>
         <img class="logo" src="/home.pag/imgs/logof.png" alt="logo">
-        <input class="search" type="search" placeholder="search">
+        <input class="search" type="search" placeholder="  search...">
         <button class="login">log in</button>
         <button class="singup">sing up</button>
         <img class="log" src="/home.pag/imgs/logof.png" alt="HarleyCross">
@@ -246,12 +274,9 @@
         <button class="modelos">modelo</button>
     </div>
 
-    <section>
-        <div id="produtos">
+</section>
 
-
-        </div>
-    </section>
+    
 </body>
 
 </html>
