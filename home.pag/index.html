@@ -7,7 +7,7 @@
     <title>HarleyCross</title>
     <style>
         body {
-            background-color: black;
+            background-color: rgb(0, 0, 0);
             margin: 0;
         }
 
@@ -44,7 +44,7 @@
             background-repeat: no-repeat;
             background-position: center;
             position: relative;
-            margin-top: 20px;
+            margin-top: -60px;
             display: flex;
         }
 
@@ -52,10 +52,11 @@
             position: absolute;
             top: -1400px;
             left: 0;
-            right: 0px;
+            right: 15%;
             bottom: 0px;
             background: rgba(0, 0, 0, 0.4);
             z-index: 1;
+            width: 100%;
         }
 
         .banner-texto {
@@ -66,11 +67,11 @@
             transform: translateY(-50%);
             color: #fff;
             z-index: 2;
-            max-width: 50vh;
+            max-width: 60vh;
         }
 
         .banner-texto h1 {
-            font-size: 7.0rem;
+            font-size: 9.0rem;
             font-weight: 800;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -80,7 +81,7 @@
         }
 
         .banner-texto p {
-            font-size: 3.4rem;
+            font-size: 5.4rem;
             margin: 15px 0 25px;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
         }
@@ -96,7 +97,7 @@
             font-weight: bold;
             padding: 12px 30px;
             border: none;
-            font-size: 3.1rem;
+            font-size: 4.1rem;
             cursor: pointer;
             transition: all 0.3s ease;
         }
@@ -135,35 +136,81 @@
 
 
         .modelos {
-            display: flex;
-            grid: 80%;
+            position: relative;
+            top: 100px;
+            right: -300px;
+            display: inline;
             align-items: center;
             justify-content: center;
-            position: relative;
-            top: 1100px;
-            height: 150px;
-            margin-top: 80px;
-            right: -980px;
-            padding: 18x 50px;
-            border: #fff;
-            margin: 6vh;
-            width: 40%;
-            font-size: 4.8rem;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            background-color: rgb(92, 87, 87);
-            color: white;
-            cursor: pointer;
-            transition: all 0.3s ease;
+            padding: 10px 80px;
+            margin: 200px;
+            font-size: 4.0rem;
+            text-shadow: 4px 4px 16px rgb(58, 56, 56);
             font-weight: bold;
-            box-sizing: border-box;
-
+            letter-spacing: 10px;
+            background-color: black;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
 
         }
-        .modelos:hover{
+
+        .modelos:hover {
             background-color: #ff6600;
+            color: white;
+
+        }
+
+        .login {
+            position: relative;
+            top: -30px;
+            left: 74.8%;
             color: #000;
-            
+            z-index: 2000;
+            padding: 10px 20px;
+            font-size: 4.5rem;
+            font-weight: bold;
+            background: none;
+            border: none;
+
+        }
+
+        .singup {
+            position: relative;
+            top: -35px;
+            left: 76%;
+            color: #000;
+            z-index: 2000;
+            padding: 10px 20px;
+            font-size: 4.5rem;
+            letter-spacing: 3px;
+            font-weight: bold;
+            background: black;
+            color: #fff;
+            border-radius: 50px;
+            border: none;
+        }
+
+        .singup:hover {
+            background-color: #ff6600;
+            color: #fff;
+        }
+
+        .search {
+            display: inline;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            color: gray;
+            position: relative;
+            top: -38px;
+            left: 72.9%;
+            z-index: 2000;
+            font-size: 3rem;
+            border-radius: 50px;
+
         }
     </style>
 </head>
@@ -173,7 +220,7 @@
         <div class="cabecalho"></div>
         <div class="cabecalho2"></div>
         <img class="logo" src="/home.pag/imgs/logof.png" alt="logo">
-        <button class="search">search</button>
+        <input class="search" type="search" placeholder="search">
         <button class="login">log in</button>
         <button class="singup">sing up</button>
         <img class="log" src="/home.pag/imgs/logof.png" alt="HarleyCross">
@@ -186,44 +233,25 @@
                 <h1>Liberdade <span class="destaque">Sobre Duas Rodas</span></h1>
                 <p>Descubra a potência e o estilo inconfundível das lendárias Harley-Davidson</p>
                 <button class="banner-btn">Explorar Modelos</button>
-               
-
-                <div id="modelos">
-                    <button class="modelos">cruiser</button>
-                    <button class="modelos">modelo</button>
-                    <button class="modelos">modelo</button>
-                    <button class="modelos">modelo</button>
-                    <button class="modelos">modelo</button>
-                </div>
-
-
-
-                <div class="produto1">
-                    <h1>modelo</h1>
-                    <h3>especificacao</h3>
-                    <p>cores</p>
-                    <button class="info">Ver Mais</button>
-
-
-                    <div class="produto1">
-                        <h1>modelo</h1>
-                        <h3>especificacao</h3>
-                        <p>cores</p>
-                        <button class="info">Ver Mais</button>
-
-                        <div class="produto2">
-                            <h1>modelo</h1>
-                            <h3>especificacao</h3>
-                            <p>cores</p>
-                            <button class="info">Ver Mais</button>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
+
+
+    <div id="modelos">
+        <button class="modelos">cruiser</button>
+        <button class="modelos">modelo</button>
+        <button class="modelos">modelo</button>
+        <button class="modelos">modelo</button>
+        <button class="modelos">modelo</button>
     </div>
 
+    <section>
+        <div id="produtos">
+
+
+        </div>
+    </section>
 </body>
 
 </html>
