@@ -7,71 +7,65 @@
     <title>HarleyCross</title>
     <style>
         body {
-            font-size: 16px;
-        }
-
-        .menu {
-            flex-direction: column;
-        }
-
-
-        body {
             background-color: rgb(0, 0, 0);
+            font-size: 1rem;
             margin: 0;
-            font-size: 18px;
+            padding: 1rem;
         }
-
-        .menu {
-            flex-direction: column;
-
+        .main{
+            min-width: 320px;
+            max-width: 800px;
+            margin: auto;
         }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-        }
-
-
+      
         .cabecalho2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             background-color: white;
             width: 100%;
-            padding: 3.5em;
+            padding: 4.5em;
             box-sizing: border-box;
             position: absolute;
-            top: 90px;
+            top: 130px;
             left: 0;
             z-index: 1000;
         }
 
         .cabecalho {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             background-color: rgb(29, 28, 28);
             width: 100%;
-            padding: 3.7em;
+            padding: 4.7em;
             box-sizing: border-box;
             position: relative;
             top: 0;
             left: 0;
             z-index: 1000;
         }
-        .banner {
+    .banner{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 100%;
-            height: 140vh;
-            background-image: url(/home.pag/imgs/banner2.jpg);
+            height: 180%;
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center;
-            position: relative;
+            background-position: center center;
             margin-top: -1%;
-            display: flex;
             max-width: 100%;
+
         }
 
+
         .banner-overlay {
-            position: absolute;
-            top: -1400px;
-            left: 0.2px;
-            right: 15%;
+            display: flex;
+            justify-content: center;
+            top: 40%;
+            left: 0.7px;
+            right: 20%;
             bottom: 0px;
             background: rgba(0, 0, 0, 0.4);
             z-index: 1;
@@ -81,30 +75,36 @@
 
         .banner-texto {
             position: absolute;
-            top: 50%;
-            left: 10%;
-            height: 70px;
+            top: 40%;
+            font-weight: 800px; 
+            left: 7%;
+            height: 0;
             transform: translateY(-50%);
             color: #fff;
             z-index: 2;
-            max-width: 60vh;
+            width: 50%;
+                     
+
+
+            
         }
 
         .banner-texto h1 {
             position: relative;
-            top: 12px;
-            font-size: 9.9rem;
-            font-weight: 800;
+            top: 18%;
+            font-size: 9rem;
             letter-spacing: 2px;
             text-transform: uppercase;
             margin: 0;
             line-height: 1;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            min-width: 320px;
+            max-width: 800px;
         }
 
         .banner-texto p {
-            font-size: 5.2rem;
-            margin: 15px 0 25px;
+            font-size: 4.8rem;
+            margin: auto;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
         }
 
@@ -130,16 +130,17 @@
         }
 
         .logo {
-            width: 500px;
-            z-index: 1000px;
+            width: 7%;
+            z-index: 1000;
             position: relative;
             top: 20px;
-            padding: 65px 0;
             box-sizing: border-box;
             position: absolute;
-            top: -50px;
-            left: 98vh;
+            top: -0.3%;
+            left: 90vh;
             z-index: 1000;
+            max-width: 100%;
+            height: auto;
 
         }
 
@@ -163,7 +164,6 @@
             cursor: pointer;
             text-transform: uppercase;
             transition: all 0.3s ease;
-
         }
 
         .modelos:hover {
@@ -175,10 +175,10 @@
 
         .login {
             position: relative;
-            top: -30px;
+            top: -800%;
             left: 151vh;
             color: #000;
-            z-index: 2000;
+            z-index: 1000;
             padding: 10px 20px;
             font-size: 4.5rem;
             font-weight: bold;
@@ -194,7 +194,7 @@
 
         .singup {
             position: relative;
-            top: -35px;
+            top: -1rem;
             left: 153vh;
             color: #000;
             z-index: 2000;
@@ -221,27 +221,30 @@
             background-color: #fff;
             color: gray;
             position: relative;
-            top: -38px;
+            top: -1rem;
             left: 148vh;
             z-index: 2000;
             font-size: 3rem;
             border-radius: 50px;
             padding: 8px;
             grid: 20px;
-
         }
+
+       
     </style>
 </head>
 
 <body>
+    <main>
     <section class="container">
         <header>
             <div class="cabecalho"></div>
             <div class="cabecalho2"></div>
-            <img class="logo" src="/home.pag/imgs/logof.png" alt="logo">
             <input class="search" type="search" placeholder="  search...">
             <a href="/login.pag/index.html"><button class="login">log in</button></a>
             <a href="/singup.pag/index.html"><button class="singup">sing up</button></a>
+            <img src="/home.pag/imgs/BANNER.jpeg" class="banner">
+            <img class="logo" src="/home.pag/imgs/logof.png" alt="logo">
         </header>
 
         <div class="banner">
@@ -265,8 +268,7 @@
         </div>
 
     </section>
-
-
+</main>
 </body>
 
 </html>
