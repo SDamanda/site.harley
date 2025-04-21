@@ -134,7 +134,7 @@
 
         .modelos {
             position: relative;
-            top: 1em;
+            top: 3em;
             right: -16rem;
             height: auto;
             display: inline;
@@ -217,6 +217,46 @@
             padding: 8px;
             grid: 20px;
         }
+
+        .moto1 div {
+            max-width: 300px;
+            width: 1000%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+        }
+
+        .moto1 img {
+            width: 800%;
+            height: auto;
+            border-radius: 5%;
+            margin-top: 50%;
+
+        }
+
+        .imagem-overlay {
+            position: relative;
+            display: inline-block;
+            width: 800%;
+            max-width: 900px;
+        }
+
+        .imagem-overlay img {
+            display: block;
+            width: 600%;
+            height: auto;
+        }
+
+        .imagem-overlay::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            pointer-events: none;
+            width: 800%;
+        }
     </style>
 </head>
 
@@ -253,14 +293,13 @@
                 <button class="modelos"> Nightster</button>
             </div>
 
-            <div>
-                <img src="/home.pag/imgs/moto1.jpg" alt="">
-                <p>A Harley-Davidson Sportster Iron 883 é uma moto clássica da linha Sportster, famosa pelo visual
-                    minimalista e agressivo, com acabamento escurecido e pouca presença de cromados. Ela possui motor
-                    V-Twin de 883cc, é conhecida pelo ronco marcante e pela pegada urbana, sendo fácil de personalizar e
-                    ótima para quem busca estilo e autenticidade sobre duas rodas</p>
-            </div>
-
+            <section class="moto1">
+                <div class="imagem-overlay">
+                    <div style="width: 300px;">
+                        <img src="/home.pag/imgs/moto2.jpg" alt="">
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 </body>
