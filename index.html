@@ -226,23 +226,26 @@
         .container {
             display: flex;
             justify-content: space-between;
-            gap: 16px;
+            gap: 20px;
             flex-wrap: wrap;
             padding: 16px;
+            margin-bottom: -38%
         }
 
         .moto1 div {
             max-width: 1000px;
             width: 150%;
-            background-color: rgba(0, 0, 0, 0.4);            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1000;
             flex: 1 1 200px;
             min-width: 200px;
             padding: 24%;
             box-sizing: border-box;
             text-align: center;
-            
+
         }
-        .moto1 img{
+
+        .moto1 img {
             width: 100%;
             height: auto;
             border-radius: 5%;
@@ -295,7 +298,7 @@
             transition: transform 0.3s;
         }
 
-        
+
         .card-produto:hover {
             box-shadow: 0 0 32px 8px rgba(255, 255, 255, 0.35);
             transform: scale(1.05);
@@ -306,6 +309,7 @@
             color: #ff6600;
             font-size: 6rem;
         }
+
         .card-produto img {
             width: 500%;
             position: relative;
@@ -360,10 +364,10 @@
             transition: box-shadow 0.3s;
             position: relative;
             left: 55%;
-            top: -99.8em;
             transition: transform 0.3s;
-            
+
         }
+
         .card-produto2 h1 {
             color: #ff6600;
             font-size: 6rem;
@@ -384,11 +388,10 @@
 
         }
 
-        .card-produto2  p{
+        .card-produto2 p {
             color: #fff;
             font-size: 3.5rem;
         }
-        
         
     </style>
 
@@ -436,20 +439,35 @@
 
                     </div>
                 </div>
+            </section>
         </div>
-        </section>
-        <section class="moto2">
-            <div class="imagem-overlay2">
-                <div class="card-produto2">
-                    <h1>Softail Classic</h1>
-                    <img class="img" src="/home.pag/imgs/m6.png">
-                    <p>R$ 55.000 a R$ 70.000</p>
-                    <p>ver mais</p>
+
+
+        <div class="container">
+            <section class="moto2">
+                <div class="imagem-overlay2">
+                    <div class="card-produto2">
+                        <h1>Softail Classic</h1>
+                        <img class="img" src="/home.pag/imgs/m6.png">
+                        <p>R$ 55.000 a R$ 70.000</p>
+                        <button>Ver mais</button>
+                    </div>
                 </div>
-            </div>
-            </div>
-        </section>
+            </section>
         </div>
+        <div class="container">
+            <section id="moto3">
+                <div id="imagem-overlay2">
+                    <div id="card-produto2">
+                        <h1>Heritage Classic</h1>
+                        <img src="/home.pag/imgs/mt3.png">
+                        <p>138.000 e R$ 150.000</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
 
     </main>
 </body>
